@@ -52949,7 +52949,7 @@ if(s!=null)s.aW(0)},
 Hg(){A.d1().$1("startWarningTimer")
 var s=this.ay
 if(s!=null)s.aW(0)
-this.ay=A.dk(A.cY(0,0,0,0,40),new A.aGF(this))},
+this.ay=A.dk(A.cY(0,0,0,0,180),new A.aGF(this))},
 afx(){var s=this
 s.Hg()
 s.cm(0,new A.aGB(s),t.vU)
