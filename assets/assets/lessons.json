@@ -1,0 +1,326 @@
+{
+  "lessons": [
+    {
+      "id": 1,
+      "title": "Hello Python",
+      "description": "Your first Python program",
+      "content": {
+        "theory": "Python is a programming language that emphasizes code readability. Your first program will display text using the print() function.",
+        "example": "print('Hello, World!')\nprint('Welcome to Python!')\nprint(2 + 3)  # You can print numbers too!",
+        "quiz": {
+          "question": "What will this code print? print(1 + 1)",
+          "options": ["11", "2", "1 + 1", "Error"],
+          "correct": 1
+        }
+      }
+    },
+    {
+      "id": 2,
+      "title": "Variables & Basic Types",
+      "description": "Store and work with data",
+      "content": {
+        "theory": "Variables are containers for storing data. Python has several basic data types including integers, floats, and strings.",
+        "example": "age = 25          # integer\nname = 'John'     # string\nheight = 1.75     # float\nprint(age)\nprint(name)\nprint(height)",
+        "quiz": {
+          "question": "Which is a valid variable name in Python?",
+          "options": ["1name", "my-name", "my_name", "@name"],
+          "correct": 2
+        }
+      }
+    },
+    {
+      "id": 3,
+      "title": "String Operations",
+      "description": "Working with text",
+      "content": {
+        "theory": "Strings are sequences of characters. Python provides many operations to manipulate strings.",
+        "example": "name = 'Python'\nprint(name.upper())      # PYTHON\nprint(name.lower())      # python\nprint(len(name))        # 6\nprint(name + ' Code')   # Python Code",
+        "quiz": {
+          "question": "What does len('Hello') return?",
+          "options": ["4", "5", "6", "Error"],
+          "correct": 1
+        }
+      }
+    },
+    {
+      "id": 4,
+      "title": "Basic Math Operations",
+      "description": "Mathematical operations in Python",
+      "content": {
+        "theory": "Python supports all basic mathematical operations and follows standard operator precedence.",
+        "example": "a = 10\nb = 3\nprint(a + b)    # Addition: 13\nprint(a - b)    # Subtraction: 7\nprint(a * b)    # Multiplication: 30\nprint(a / b)    # Division: 3.333...\nprint(a % b)    # Modulus: 1",
+        "quiz": {
+          "question": "What is the result of 15 % 4?",
+          "options": ["3", "3.75", "4", "1"],
+          "correct": 0
+        }
+      }
+    },
+    {
+      "id": 5,
+      "title": "User Input",
+      "description": "Getting input from users",
+      "content": {
+        "theory": "The input() function allows us to get user input from the keyboard.",
+        "example": "name = input('Enter your name: ')\nage = int(input('Enter your age: '))\nprint(f'Hello {name}, you are {age} years old!')",
+        "quiz": {
+          "question": "What type does input() return?",
+          "options": ["int", "float", "string", "bool"],
+          "correct": 2
+        }
+      }
+    },
+    {
+      "id": 6,
+      "title": "If Statements",
+      "description": "Making decisions in code",
+      "content": {
+        "theory": "If statements allow your program to make decisions based on conditions.",
+        "example": "age = 18\nif age >= 18:\n    print('You are an adult')\nelse:\n    print('You are a minor')",
+        "quiz": {
+          "question": "What will print if age is 16?",
+          "options": ["You are an adult", "You are a minor", "Nothing", "Error"],
+          "correct": 1
+        }
+      }
+    },
+    {
+      "id": 7,
+      "title": "Elif Statements",
+      "description": "Multiple conditions",
+      "content": {
+        "theory": "elif allows you to check multiple conditions one after another.",
+        "example": "score = 85\nif score >= 90:\n    print('A')\nelif score >= 80:\n    print('B')\nelif score >= 70:\n    print('C')\nelse:\n    print('F')",
+        "quiz": {
+          "question": "What grade would a score of 75 get?",
+          "options": ["A", "B", "C", "F"],
+          "correct": 2
+        }
+      }
+    },
+    {
+      "id": 8,
+      "title": "While Loops",
+      "description": "Repeating code while a condition is true",
+      "content": {
+        "theory": "While loops repeat a block of code as long as a condition is true.",
+        "example": "count = 0\nwhile count < 5:\n    print(count)\n    count += 1",
+        "quiz": {
+          "question": "How many times will the loop print?",
+          "options": ["4", "5", "6", "Infinite"],
+          "correct": 1
+        }
+      }
+    },
+    {
+      "id": 9,
+      "title": "For Loops",
+      "description": "Iterating over sequences",
+      "content": {
+        "theory": "For loops are used to iterate over sequences (like ranges, lists, or strings).",
+        "example": "for i in range(5):\n    print(i)\n\nfor char in 'Python':\n    print(char)",
+        "quiz": {
+          "question": "What does range(3) produce?",
+          "options": ["0,1,2,3", "1,2,3", "0,1,2", "1,2"],
+          "correct": 2
+        }
+      }
+    },
+    {
+      "id": 10,
+      "title": "Break and Continue",
+      "description": "Control flow in loops",
+      "content": {
+        "theory": "Break exits a loop, while continue skips to the next iteration.",
+        "example": "for i in range(5):\n    if i == 2:\n        continue\n    if i == 4:\n        break\n    print(i)",
+        "quiz": {
+          "question": "What numbers will be printed?",
+          "options": ["0,1,3", "0,1,2,3", "0,1,2,3,4", "0,1,3,4"],
+          "correct": 0
+        }
+      }
+    },
+    {
+      "id": 11,
+      "title": "Lists Basics",
+      "description": "Working with collections",
+      "content": {
+        "theory": "Lists are ordered collections of items that can be changed.",
+        "example": "numbers = [1, 2, 3, 4, 5]\nprint(numbers[0])     # First item\nprint(numbers[-1])    # Last item\nprint(numbers[1:3])   # Slice",
+        "quiz": {
+          "question": "What is numbers[-2] in [1,2,3,4]?",
+          "options": ["1", "2", "3", "4"],
+          "correct": 2
+        }
+      }
+    },
+    {
+      "id": 12,
+      "title": "List Methods",
+      "description": "Modifying lists",
+      "content": {
+        "theory": "Lists have many built-in methods for adding, removing, and modifying elements.",
+        "example": "fruits = ['apple']\nfruits.append('banana')    # Add to end\nfruits.insert(0, 'orange') # Add at index\nfruits.pop()             # Remove last\nprint(fruits)",
+        "quiz": {
+          "question": "What remains in fruits after this code?",
+          "options": ["['apple']", "['orange', 'apple']", "['banana']", "['orange']"],
+          "correct": 1
+        }
+      }
+    },
+    {
+      "id": 13,
+      "title": "Tuples",
+      "description": "Immutable sequences",
+      "content": {
+        "theory": "Tuples are immutable sequences, meaning they cannot be changed after creation.",
+        "example": "point = (3, 4)\nx, y = point        # Unpacking\ncoords = point + (5,)  # Concatenation\nprint(coords)",
+        "quiz": {
+          "question": "Which is valid tuple creation?",
+          "options": ["(1)", "(1,)", "1,", "All of above"],
+          "correct": 3
+        }
+      }
+    },
+    {
+      "id": 14,
+      "title": "Dictionaries Basics",
+      "description": "Key-value pairs",
+      "content": {
+        "theory": "Dictionaries store key-value pairs for quick lookup by key.",
+        "example": "person = {\n    'name': 'John',\n    'age': 30,\n    'city': 'New York'\n}\nprint(person['name'])",
+        "quiz": {
+          "question": "How do you access a value in a dictionary?",
+          "options": ["dict(key)", "dict[key]", "dict.key", "dict.get(key)"],
+          "correct": 1
+        }
+      }
+    },
+    {
+      "id": 15,
+      "title": "Dictionary Methods",
+      "description": "Working with dictionaries",
+      "content": {
+        "theory": "Dictionaries have methods for adding, removing, and accessing items safely.",
+        "example": "info = {}\ninfo['name'] = 'Alice'   # Add item\ninfo.get('age', 25)    # Safe access\ninfo.update({'city': 'Paris'})  # Add multiple",
+        "quiz": {
+          "question": "What does dict.get('key', 0) return if 'key' isn't found?",
+          "options": ["None", "0", "Error", "False"],
+          "correct": 1
+        }
+      }
+    },
+    {
+      "id": 16,
+      "title": "Functions Basics",
+      "description": "Creating reusable code",
+      "content": {
+        "theory": "Functions are reusable blocks of code that perform specific tasks.",
+        "example": "def greet(name):\n    return f'Hello, {name}!'\n\nmessage = greet('Alice')\nprint(message)",
+        "quiz": {
+          "question": "What happens if you don't use return?",
+          "options": ["Error", "None", "Empty string", "Undefined"],
+          "correct": 1
+        }
+      }
+    },
+    {
+      "id": 17,
+      "title": "Function Parameters",
+      "description": "Input to functions",
+      "content": {
+        "theory": "Functions can take multiple parameters and different types of parameters.",
+        "example": "def calculate_total(items, tax_rate):\n    subtotal = sum(items)\n    return subtotal * (1 + tax_rate)",
+        "quiz": {
+          "question": "How many parameters does the function have?",
+          "options": ["1", "2", "3", "0"],
+          "correct": 1
+        }
+      }
+    },
+    {
+      "id": 18,
+      "title": "Return Values",
+      "description": "Function outputs",
+      "content": {
+        "theory": "Functions can return single values, multiple values, or nothing.",
+        "example": "def get_coordinates():\n    x = 10\n    y = 20\n    return x, y\n\nx_pos, y_pos = get_coordinates()",
+        "quiz": {
+          "question": "What type is returned by get_coordinates()?",
+          "options": ["int", "list", "tuple", "dict"],
+          "correct": 2
+        }
+      }
+    },
+    {
+      "id": 19,
+      "title": "Default Parameters",
+      "description": "Optional function arguments",
+      "content": {
+        "theory": "Functions can have default values for parameters.",
+        "example": "def greet(name, greeting='Hello'):\n    return f'{greeting}, {name}!'\n\nprint(greet('Alice'))         # Uses default\nprint(greet('Bob', 'Hi'))    # Override default",
+        "quiz": {
+          "question": "What prints with greet('Carol')?",
+          "options": ["Carol, Hello!", "Hello, Carol!", "Hi, Carol!", "Error"],
+          "correct": 1
+        }
+      }
+    },
+    {
+      "id": 20,
+      "title": "Lambda Functions",
+      "description": "Small anonymous functions",
+      "content": {
+        "theory": "Lambda functions are small, anonymous functions defined in a single line.",
+        "example": "square = lambda x: x**2\ndouble = lambda x: x*2\n\nprint(square(4))   # 16\nprint(double(5))   # 10",
+        "quiz": {
+          "question": "What's the output of (lambda x: x+1)(5)?",
+          "options": ["5", "6", "Error", "None"],
+          "correct": 1
+        }
+      }
+    },
+    {
+      "id": 21,
+      "title": "Try/Except Basics",
+      "description": "Basic error handling",
+      "content": {
+        "theory": "Try/except blocks handle errors gracefully in your code.",
+        "example": "try:\n    number = int('abc')\nexcept ValueError:\n    print('Invalid number')",
+        "quiz": {
+          "question": "What happens when an error occurs in try block?",
+          "options": ["Program crashes", "Skips to except", "Continues normally", "Nothing"],
+          "correct": 1
+        }
+      }
+    },
+    {
+      "id": 22,
+      "title": "Common Exceptions",
+      "description": "Handling different error types",
+      "content": {
+        "theory": "Python has many built-in exceptions for different types of errors.",
+        "example": "try:\n    print(1/0)           # ZeroDivisionError\n    print(undefined_var)  # NameError\nexcept ZeroDivisionError:\n    print('Cannot divide by zero')\nexcept NameError:\n    print('Variable not found')",
+        "quiz": {
+          "question": "Which error occurs with list[10] for empty list?",
+          "options": ["ValueError", "IndexError", "TypeError", "KeyError"],
+          "correct": 1
+        }
+      }
+    },
+    {
+      "id": 23,
+      "title": "Reading Files",
+      "description": "File input operations",
+      "content": {
+        "theory": "Python can read data from files using file objects.",
+        "example": "with open('file.txt', 'r') as file:\n    content = file.read()\n    lines = file.readlines()\nprint(content)",
+        "quiz": {
+          "question": "What mode opens a file for reading?",
+          "options": ["w", "r", "a", "x"],
+          "correct": 1
+        }
+      }
+    }
+  ]
+}
